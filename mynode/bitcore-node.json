@@ -1,0 +1,18 @@
+{
+  "network": "testnet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "web",
+    "falcon-insight-api",
+    "falcon-insight-ui"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "spawn": {
+        "datadir": "./data",
+        "exec": "/home/user/falcon-bitcore-node/bin/falcond"
+      }
+    }
+  }
+}

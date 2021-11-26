@@ -52,7 +52,7 @@ bitcoind.on('ready', function() {
 
   var client = new bitcoin.Client({
     host: 'localhost',
-    port: 18332,
+    port: 52035,
     user: 'bitcoin',
     pass: 'local321'
   });

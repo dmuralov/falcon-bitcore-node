@@ -1,10 +1,10 @@
-# Particl Service
+# Falcon Service
 
-The Particl Service is a Node.js interface to [Particl Core](https://github.com/particl/particl-core) for querying information about the particl block chain. It will manage starting and stopping `particld` or connect to several running `particld` processes. It uses an instance of a Particl with additional indexes enabled for querying information about addresses and blocks. Results are cached for performance and there are several additional API methods added for common queries.
+The Falcon Service is a Node.js interface to [Falcon Core](https://github.com/dmitry9888/falcon-core) for querying information about the falcon block chain. It will manage starting and stopping `falcond` or connect to several running `falcond` processes. It uses an instance of a Falcon with additional indexes enabled for querying information about addresses and blocks. Results are cached for performance and there are several additional API methods added for common queries.
 
 ## Configuration
 
-The default configuration will include a "spawn" configuration in "particld". This defines the location of the block chain database and the location of the `particld` daemon executable. The below configuration points to a local clone of `particl`, and will start `particld` automatically with your Node.js application.
+The default configuration will include a "spawn" configuration in "falcond". This defines the location of the block chain database and the location of the `falcond` daemon executable. The below configuration points to a local clone of `falcon`, and will start `falcond` automatically with your Node.js application.
 
 ```json
   "servicesConfig": {
@@ -17,7 +17,7 @@ The default configuration will include a "spawn" configuration in "particld". Th
   }
 ```
 
-It's also possible to connect to separately managed `particld` processes with round-robin quering, for example:
+It's also possible to connect to separately managed `falcond` processes with round-robin quering, for example:
 
 ```json
   "servicesConfig": {
